@@ -8,11 +8,17 @@ html,body{
 .container{
     width: 100%;
     max-width: 1242px;
+    margin: 0 auto;
 }
  /* Css Header*/
- header{
-    background-color: transparent;
+ .header{
+    /*background-color: grey;*/
  }
+ .header-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
  .left-container, .right-container{
     display: flex;
     flex-direction: row;
@@ -27,8 +33,26 @@ html,body{
     flex-direction: row;
 }
 .nav-item{
+    
+    margin-right: 20px;
+    color: #e5e5e5;
+}
+.nav-item.active{
     color: white;
+}
+.right-container svg, .right-container img{
+margin: 22px;
+cursor: pointer;
 }
 .right-container svg{
 color: white;
+}
+.right-container img{
+    max-width: 36px;
+}
+/*Responsive */
+@media (max-width:767px) {
+    .main-nav{
+        display: none;
+    }
 }
