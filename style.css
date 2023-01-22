@@ -1,0 +1,34 @@
+/*Normalize Css */
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1242px;
+}
+ /* Css Header*/
+ header{
+    background-color: transparent;
+ }
+ .left-container, .right-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+.header-brand{
+    max-width: 100px;
+}
+.main-nav{
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+.nav-item{
+    color: white;
+}
+.right-container svg{
+color: white;
+}
